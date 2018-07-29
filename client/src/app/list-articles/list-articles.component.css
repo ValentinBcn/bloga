@@ -1,0 +1,17 @@
+.col-8{
+
+    border:solid 1px #007bff;
+     background-color:white;
+     text-align: center;
+    padding: 10px 10vw 0px 10vw;
+
+   
+}
+
+.add-comment{
+    border-radius: 20px;
+    border: solid 1px #007bff;
+     width:80%;
+      font-size:14px;
+      padding: 2px 0px 2px 8px;
+}

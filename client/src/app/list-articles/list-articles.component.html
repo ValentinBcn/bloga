@@ -1,0 +1,37 @@
+<div style="background-color: red">
+  <div class="row">
+  <div class="col"></div>
+  <div class="col-5 col-xs-12"  >
+      <div *ngFor="let article of listArticles; let i=index" style="background-color: white">
+          <ul>
+            <li style="list-style: none">
+               <h1> {{article.titre}} </h1>
+               <hr>
+                
+                {{article.contenu}}
+
+              <br>
+             
+                <button (click)="article.hideComments = !article.hideComments">+ comments</button>
+
+                <div id="commentaires" [hidden]="article.hideComments">
+                  <input type="text" class="add-comment" placeholder="ajouter un commentaire" > 
+                  <br>
+                   <div  *ngFor="let item of article.commentaires" style="background-color:#dbdbdb ;margin-top:10px; border-radius: 15px">
+                        {{item}}
+                     
+                      
+                   </div> 
+                </div>
+                
+                <br><br>
+            </li>
+            <hr>
+          </ul>
+        
+        </div>
+        <br>
+  </div>
+  <div class="col"></div>
+</div>
+</div>
